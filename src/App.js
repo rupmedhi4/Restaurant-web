@@ -1,3 +1,4 @@
+import Cart from "./cart/Cart";
 import Header from "./components/Header/Header";
 import HeroImages from "./components/HeroImages/HeroImages";
 
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Header/>
       <HeroImages/>
+      <Cart/>
 
     </div>
   );
