@@ -1,0 +1,9 @@
+.main-cart{
+    border-radius: 25px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: -150px;
+    width: 50%;
+    padding: 1.5rem;
+}

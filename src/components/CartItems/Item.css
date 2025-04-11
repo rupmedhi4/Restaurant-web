@@ -1,0 +1,22 @@
+.meal-main-div{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.meal-main-div div h3{
+    font-size: 1.17em;
+    font-weight: bold;
+   margin-bottom: 5px;
+}
+.description{
+    font-style: italic;
+    font-family: Noto Sans JP, sans-serif;
+    font-weight: 500;
+
+}
+.meal-price{
+    color: #ad5502;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: .25rem;
+}

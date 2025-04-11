@@ -1,13 +1,15 @@
-import Cart from "./cart/Cart";
+import CartItems from "./components/CartItems/CartItems";
 import Header from "./components/Header/Header";
 import HeroImages from "./components/HeroImages/HeroImages";
+import Summary from "./components/Summary/Summary";
 
 function App() {
   return (
     <div>
       <Header/>
       <HeroImages/>
-      <Cart/>
+      <Summary/>
+      <CartItems/>
 
     </div>
   );
