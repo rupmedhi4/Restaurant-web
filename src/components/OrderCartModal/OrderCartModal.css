@@ -1,0 +1,24 @@
+.total-amount-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-amount-div h3,
+.total-amount-div span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+}
+.order-btn{
+    display: flex;
+    justify-content: end;
+    gap:15px;
+}
+.order-main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    height: 100%; 
+    padding: 1rem;
+  }
+  
