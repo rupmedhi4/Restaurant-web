@@ -1,26 +1,33 @@
 .modal-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    z-index: 999;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  z-index: 999;
+}
+
   
   .modal-wrapper {
-    width:45%;
-    height: 35%;
-    margin-top: 20vh; 
+    width: 45%;
+    max-height: 70vh;
+    height: fit-content;              
+    overflow-y: auto;
+    margin-top: 20vh;
     background-color: white;
     border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     max-width: 90vw;
-    max-height: 90vh;
-    overflow: auto;
     left: 5%;
     padding: 1rem;
+    transition: all 0.3s ease-in-out;
+    
   }
+  
+  
+  
   

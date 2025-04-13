@@ -41,18 +41,21 @@ export default function CartItems() {
     <div className='items-div'>
       <Cart bg="#fff" width='60%'>
         {
-          meals.map((item) => {
+          meals.map((item, index) => {
             return (
-              <div style={{marginLeft:"2rem"}}>
-                <Item title={item.meal} description={item.description} price={item.price} />
+              <div key={index} style={{ marginLeft: "2rem" }}>
+                <Item
+                  title={item.meal}
+                  description={item.description}
+                  price={item.price}
+                  id={index}
+                />
                 <hr />
               </div>
-
             )
           })
         }
       </Cart>
-
     </div>
-  )
+  );
 }

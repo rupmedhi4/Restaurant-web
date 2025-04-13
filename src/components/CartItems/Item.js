@@ -1,13 +1,31 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './Item.css'
 import Button from '../UI/Button'
+import { UserContext } from '../context/UserContext'
 
-export default function Item({ title, description, price }) {
-  const [count, setCount] = useState(1)
+export default function Item({ title, description, price, id }) {
+  const [amount, setAmount] = useState(1)
+  const { addItem, setAddItem } = useContext(UserContext)
 
   const handleChange = (e) => {
-    setCount(Number(e.target.value));
+    setAmount(Number(e.target.value));
   };
+
+  const handleAdd = (id) => {
+    let isItemExist = addItem.find((item, indx) => indx === id)
+    isItemExist ?
+      alert("Item is already added to your cart.")
+      : setAddItem((prev) => {
+        return [...prev, {
+          title: title,
+          description: description,
+          price: price,
+          amount: amount
+        }]
+      })
+  };
+  console.log(addItem);
+
 
   return (
     <div className='meal-main-div'>
@@ -22,13 +40,13 @@ export default function Item({ title, description, price }) {
           <h4>Amount</h4>
           <input
             type="number"
-            value={count}
+            value={amount}
             min={1}
             onChange={handleChange}
           />
         </div>
 
-        <Button>+Add</Button>
+        <Button onClick={() => handleAdd(id)}>+Add</Button>
       </div>
 
     </div>

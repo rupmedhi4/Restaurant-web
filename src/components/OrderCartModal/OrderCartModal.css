@@ -10,6 +10,7 @@
   color: #000000;
 }
 .order-btn{
+  margin-top: 1rem;
     display: flex;
     justify-content: end;
     gap:15px;
@@ -17,8 +18,39 @@
 .order-main-div {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
-    height: 100%; 
     padding: 1rem;
   }
+.orderItem-div{
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.orderItem-div > div:nth-child(2) {
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+.orderItem-div > div:nth-child(2) button{
+ padding: 3px 15px 3px 15px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+.btn1{
+  border: 1px solid #761f09;
+  outline: none;
+
+}
+.btn2{
+  background-color: #761f09;
+  border: none;
+  color: #fff;
+}
+.orderItem-price{
+  display: flex;
+  justify-content: space-between;
+}
+.orderItem-price span{
+  color: #761f09;
+  font-weight: 600;
   
+}
